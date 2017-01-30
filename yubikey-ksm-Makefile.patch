@@ -1,0 +1,11 @@
+--- Makefile.orig	2010-08-31 09:47:45.621122489 -0500
++++ Makefile	2010-08-31 09:47:57.117377617 -0500
+@@ -58,7 +58,7 @@
+ 	install -D ykksm-import.pl $(binprefix)/ykksm-import
+ 	install -D ykksm-export.pl $(binprefix)/ykksm-export
+ 	install -D ykksm-checksum.pl $(binprefix)/ykksm-checksum
+-	install -D --backup --mode 640 --group $(wwwgroup) ykksm-config.php $(etcprefix)/ykksm-config.php
++	install -D --backup --mode 640 ykksm-config.php $(etcprefix)/ykksm-config.php
+ 	install -D ykksm-db.sql $(docprefix)/ykksm-db.sql
+ 	install -D Makefile $(docprefix)/ykksm.mk
+ 	install -D $(DOCS) $(docprefix)/
