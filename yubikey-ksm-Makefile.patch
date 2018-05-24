@@ -1,11 +1,11 @@
---- Makefile.orig	2010-08-31 09:47:45.621122489 -0500
-+++ Makefile	2010-08-31 09:47:57.117377617 -0500
-@@ -58,7 +58,7 @@
- 	install -D ykksm-import.pl $(binprefix)/ykksm-import
- 	install -D ykksm-export.pl $(binprefix)/ykksm-export
- 	install -D ykksm-checksum.pl $(binprefix)/ykksm-checksum
--	install -D --backup --mode 640 --group $(wwwgroup) ykksm-config.php $(etcprefix)/ykksm-config.php
-+	install -D --backup --mode 640 ykksm-config.php $(etcprefix)/ykksm-config.php
- 	install -D ykksm-db.sql $(docprefix)/ykksm-db.sql
- 	install -D Makefile $(docprefix)/ykksm.mk
- 	install -D $(DOCS) $(docprefix)/
+--- yubikey-ksm-1.15/Makefile.orig	2018-05-24 21:42:02.222914802 +0200
++++ yubikey-ksm-1.15/Makefile	2018-05-24 21:42:57.299580841 +0200
+@@ -61,7 +61,7 @@
+ 	install -D ykksm-import $(DESTDIR)$(binprefix)/ykksm-import
+ 	install -D ykksm-export $(DESTDIR)$(binprefix)/ykksm-export
+ 	install -D ykksm-checksum $(DESTDIR)$(binprefix)/ykksm-checksum
+-	install -D --backup --mode 640 --group $(wwwgroup) ykksm-config.php $(DESTDIR)$(etcprefix)/ykksm-config.php
++	install -D --mode 640 ykksm-config.php $(DESTDIR)$(etcprefix)/ykksm-config.php
+ 	install -D ykksm-gen-keys.1 $(DESTDIR)$(manprefix)/ykksm-gen-keys.1
+ 	install -D ykksm-import.1 $(DESTDIR)$(manprefix)/ykksm-import.1
+ 	install -D ykksm-export.1 $(DESTDIR)$(manprefix)/ykksm-export.1
