@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 Summary:	The YubiKey Key Storage Module
 Summary(pl.UTF-8):	YubiKey Key Storage Module - moduł przechowywania kluczy
 Name:		yubikey-ksm
