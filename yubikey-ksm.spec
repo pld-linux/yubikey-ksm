@@ -29,7 +29,7 @@ AES w użyciu wraz z serwerem sprawdzających poprawność YubiKey.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 cp .htaccess htaccess
 
 %install
